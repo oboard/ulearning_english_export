@@ -1629,9 +1629,6 @@ let paperInfo = {
                       <span class="question-content-list-item-content-list-item-title-text" v-html="item.title" />
                     </div>
                     <div class="question-content-list-item-content-list-item-content">
-                      <div class="question-content-list-item-content-list-item-content-title">
-                        <span class="question-content-list-item-content-list-item-content-title-text" v-html="item.title" />
-                      </div>
                       <div class="question-content-list-item-content-list-item-content-list">
                       <span v-if="item.correctreply" v-html="item.correctreply" />
                       <!-- "link": [
@@ -1697,6 +1694,13 @@ let paperInfo = {
   .question-title-score {
     font-size: 16px;
     color: #333;
+  }
+
+  .question-content-list-item-content-list-item-title-index {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-right: 10px;
   }
 
   .question-content {
@@ -1784,4 +1788,5 @@ let paperInfo = {
     padding: 10px;
     margin-top: 20px;
   }
+  
 </style>
